@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: rgb(250, 138, 231);
+    justify-content: center;
+
+}
+
+header .titulo {
+    font-size: 50px;
+    padding: 20px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    display: inline-block;
+    animation: typing 3s steps(10) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
